@@ -1,0 +1,30 @@
+package files;
+
+import io.restassured.path.json.JsonPath;
+
+public class ComplexJsonParse {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+		JsonPath js = new JsonPath(payload.CoursePrice());
+
+		// no. of courses return by API using JSON Parse
+int count =js.getInt("courses.size()");
+System.out.println(count);
+
+// printing the purchase amount
+
+int purchaseAmount = js.getInt("dashboard.purchaseAmount");
+System.out.println(purchaseAmount);
+	
+	// print title of all courses
+for (int i =0; i < count; i++)
+{
+	System.out.println("Title: "+ js.getByte("courses["+i+"].title"));
+}
+	
+	}
+
+}

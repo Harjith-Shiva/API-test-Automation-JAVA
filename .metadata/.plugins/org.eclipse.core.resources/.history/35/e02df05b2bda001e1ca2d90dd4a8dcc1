@@ -1,0 +1,69 @@
+package POJO;
+
+import java.util.List;
+
+public class GoogleMapsBody {
+	
+	private static Location location;
+	private static int accuracy;
+	private static String name;
+	private static String phone_number;
+	private static String address;
+	private static List<String> types;
+	private static String website;
+	private static String language;
+	
+	
+	
+	
+	public static Location getLocation() {
+		return location;
+	}
+	public static void setLocation(Location location) {
+		GoogleMapsBody.location = location;
+	}
+	public static int getAccuracy() {
+		return accuracy;
+	}
+	public static void setAccuracy(int accuracy) {
+		GoogleMapsBody.accuracy = accuracy;
+	}
+	public static String getName() {
+		return name;
+	}
+	public static void setName(String name) {
+		GoogleMapsBody.name = name;
+	}
+	public static String getPhone_number() {
+		return phone_number;
+	}
+	public static void setPhone_number(String phone_number) {
+		GoogleMapsBody.phone_number = phone_number;
+	}
+	public static String getAddress() {
+		return address;
+	}
+	public static void setAddress(String address) {
+		GoogleMapsBody.address = address;
+	}
+	public static List<String> getTypes() {
+		return types;
+	}
+	public static void setTypes(List<String> types) {
+		GoogleMapsBody.types = types;
+	}
+	public static String getWebsite() {
+		return website;
+	}
+	public static void setWebsite(String website) {
+		GoogleMapsBody.website = website;
+	}
+	public static String getLanguage() {
+		return language;
+	}
+	public static void setLanguage(String language) {
+		GoogleMapsBody.language = language;
+	}
+	
+	
+}

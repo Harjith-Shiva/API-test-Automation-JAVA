@@ -1,0 +1,11 @@
+package POJO;
+
+public class Location {
+
+	private static int lat;
+	private static int lng;
+	
+	
+	
+	
+}
