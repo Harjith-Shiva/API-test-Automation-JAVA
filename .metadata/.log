@@ -2788,3 +2788,9 @@ org.eclipse.core.runtime.CoreException: Launch configuration SpecBuilderTest ref
 
 !ENTRY org.eclipse.m2e.logback.appender 2 0 2024-03-07 22:09:56.449
 !MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-03-07 22:12:54.729
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-03-07 22:12:54.743
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!

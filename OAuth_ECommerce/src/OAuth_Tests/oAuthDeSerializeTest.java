@@ -1,4 +1,4 @@
-package Tests;
+package OAuth_Tests;
 
 import io.restassured.RestAssured;
 import io.restassured.path.json.JsonPath;

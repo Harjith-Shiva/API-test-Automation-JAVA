@@ -1,7 +1,13 @@
-package Tests;
+package OAuth_Tests;
+
 import io.restassured.RestAssured;
+import io.restassured.builder.RequestSpecBuilder;
+import io.restassured.builder.ResponseSpecBuilder;
+import io.restassured.http.ContentType;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
+import io.restassured.specification.RequestSpecification;
+import io.restassured.specification.ResponseSpecification;
 
 import static io.restassured.RestAssured.*;
 import static org.hamcrest.Matchers.*;
@@ -17,11 +23,11 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 
 import POJO.GoogleMapsBody;
 import POJO.Location;
-public class GoogleMapsSerializeTest {
+public class SpecBuilderTest {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-RestAssured.baseURI ="https://rahulshettyacademy.com";
+
 
 
 
@@ -46,11 +52,17 @@ body.setLocation(location);
 
 
 
+RequestSpecification requestSpec = new RequestSpecBuilder().setBaseUri("https://rahulshettyacademy.com").addQueryParam("key", "qaclick123").setContentType(ContentType.JSON)
+.build();
 
-		Response response = given().log().all().queryParam("key", "qaclick123")
-		.body(body)
-		.when().post("/maps/api/place/add/json")
-		.then().assertThat().statusCode(200).extract().response();
+ResponseSpecification responseSpec = new ResponseSpecBuilder().expectStatusCode(200).expectContentType(ContentType.JSON)
+.build();
+
+		RequestSpecification res = given().spec(requestSpec)
+		.body(body);
+		
+		Response response = res.when().post("/maps/api/place/add/json")
+		.then().spec(responseSpec).extract().response();
 		
 		
 		String responseAsString = response.asString();
