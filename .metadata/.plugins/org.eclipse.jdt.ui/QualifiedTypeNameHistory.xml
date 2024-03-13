@@ -1,29 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="io.restassured.RestAssured"/>
-    <fullyQualifiedTypeName name="files.payload"/>
-    <fullyQualifiedTypeName name="org.testng.annotations.Test"/>
-    <fullyQualifiedTypeName name="POJO.GetCourse"/>
-    <fullyQualifiedTypeName name="com.fasterxml.jackson.databind.ObjectMapper"/>
-    <fullyQualifiedTypeName name="com.fasterxml.jackson.databind.DeserializationFeature"/>
-    <fullyQualifiedTypeName name="POJO.Api"/>
-    <fullyQualifiedTypeName name="java.util.Arrays"/>
-    <fullyQualifiedTypeName name="io.restassured.response.Response"/>
-    <fullyQualifiedTypeName name="POJO.GoogleMapsBody"/>
-    <fullyQualifiedTypeName name="POJO.Location"/>
-    <fullyQualifiedTypeName name="io.restassured.builder.ResponseSpecBuilder"/>
-    <fullyQualifiedTypeName name="io.restassured.specification.ResponseSpecification"/>
-    <fullyQualifiedTypeName name="io.restassured.builder.RequestSpecBuilder"/>
-    <fullyQualifiedTypeName name="io.restassured.http.ContentType"/>
     <fullyQualifiedTypeName name="io.restassured.specification.RequestSpecification"/>
-    <fullyQualifiedTypeName name="POJO.LoginResponse"/>
-    <fullyQualifiedTypeName name="java.io.File"/>
-    <fullyQualifiedTypeName name="io.restassured.path.json.JsonPath"/>
-    <fullyQualifiedTypeName name="POJO.Orders"/>
-    <fullyQualifiedTypeName name="POJO.CreateOrder"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
-    <fullyQualifiedTypeName name="org.testng.Assert"/>
-    <fullyQualifiedTypeName name="io.cucumber.junit.CucumberOptions"/>
-    <fullyQualifiedTypeName name="io.cucumber.junit.Cucumber"/>
+    <fullyQualifiedTypeName name="io.restassured.specification.ResponseSpecification"/>
+    <fullyQualifiedTypeName name="io.restassured.response.Response"/>
+    <fullyQualifiedTypeName name="io.restassured.builder.ResponseSpecBuilder"/>
+    <fullyQualifiedTypeName name="io.restassured.builder.RequestSpecBuilder"/>
+    <fullyQualifiedTypeName name="resources.TestDataBuild"/>
+    <fullyQualifiedTypeName name="resources.Utils"/>
 </qualifiedTypeNameHistroy>

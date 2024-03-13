@@ -1,10 +1,10 @@
 
-Feature: Application Login
-  I want to use this template for my feature file
+Feature: Validating the Google Place APIs
 
   
-  Scenario: Home page default login
-    Given user is on landing page
-    When user login into application with username and password
-    Then home page is populated    
-    And cards are displayed
+  Scenario: verify of the place is being successfully added using the AddPlaceAPI
+    Given Add Place Payload
+    When user calls "AddPlaceAPI" with POST http request
+    Then the API call got success with status code 200   
+    And "status" in response body is "OK"
+    And "scope" in response body is "APP"
