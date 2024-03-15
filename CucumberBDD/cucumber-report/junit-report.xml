@@ -1,18 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="3.492" tests="1" skipped="0" failures="1" errors="0">
-<testcase classname="Validating the Google Place APIs" name="Verify if Delete Place functionality is working" time="3.299">
-<failure type="java.lang.NullPointerException" message="Cannot invoke &quot;io.restassured.specification.ResponseSpecification.validate(io.restassured.response.Response)&quot; because &quot;responseSpecification&quot; is null">
-<![CDATA[java.lang.NullPointerException: Cannot invoke "io.restassured.specification.ResponseSpecification.validate(io.restassured.response.Response)" because "responseSpecification" is null
-	at io.restassured.internal.ValidatableResponseOptionsImpl.spec(ValidatableResponseOptionsImpl.java:288)
-	at stepDefinitions.stepDefinition.user_calls_with_post_http_request(stepDefinition.java:77)
-	at ✽.user calls "deletePlaceAPI" with "POST" http request(file:///C:/Users/Harji/eclipse-workspace-new/CucumberBDD/src/test/java/features/Login.feature:24)
-]]>
-</failure>
+<testsuite name="Cucumber" time="7.725" tests="3" skipped="0" failures="0" errors="0">
+<testcase classname="Validating the Google Place APIs" name="verify of the place is being successfully added using the AddPlaceAPI - Example #1.1" time="4.524">
+<system-out><![CDATA[
+Given Add Place Payload with "home one" "English" "One World Alliance"......passed
+When user calls "addPlaceAPI" with "POST" http request......................passed
+Then the API call got success with status code 200..........................passed
+And "status" in response body is "OK".......................................passed
+And "scope" in response body is "APP".......................................passed
+And verify place_ID created maps to "home one" using "getPlaceAPI"..........passed
+]]></system-out>
+</testcase>
+<testcase classname="Validating the Google Place APIs" name="verify of the place is being successfully added using the AddPlaceAPI - Example #1.2" time="1.621">
+<system-out><![CDATA[
+Given Add Place Payload with "home two" "Tamil" "Poongavanam"...............passed
+When user calls "addPlaceAPI" with "POST" http request......................passed
+Then the API call got success with status code 200..........................passed
+And "status" in response body is "OK".......................................passed
+And "scope" in response body is "APP".......................................passed
+And verify place_ID created maps to "home two" using "getPlaceAPI"..........passed
+]]></system-out>
+</testcase>
+<testcase classname="Validating the Google Place APIs" name="Verify if Delete Place functionality is working" time="1.368">
 <system-out><![CDATA[
 Given deletePalce Payload...................................................passed
-When user calls "deletePlaceAPI" with "POST" http request...................failed
-Then the API call got success with status code 200..........................skipped
-And "status" in response body is "OK".......................................skipped
+When user calls "deletePlaceAPI" with "POST" http request...................passed
+Then the API call got success with status code 200..........................passed
+And "status" in response body is "OK".......................................passed
 ]]></system-out>
 </testcase>
 </testsuite>
