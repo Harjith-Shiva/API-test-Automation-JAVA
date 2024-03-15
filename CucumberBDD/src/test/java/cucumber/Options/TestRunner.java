@@ -1,4 +1,4 @@
-package cucumberOptions;
+package cucumber.Options;
 
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
@@ -10,7 +10,7 @@ import org.junit.runner.RunWith;
         plugin = {"pretty", "html:cucumber-report/html-report.html",
                 "junit:cucumber-report/junit-report.xml",
                 "json:cucumber-report/json-report.json"},
-        //tags = "@test",
+        //tags = "@deletePlaceAPI",
         glue = {"stepDefinitions"}
 )
 public class TestRunner {

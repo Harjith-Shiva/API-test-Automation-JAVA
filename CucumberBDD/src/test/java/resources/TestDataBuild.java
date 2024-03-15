@@ -9,15 +9,15 @@ import POJO.Location;
 public class TestDataBuild {
 
 	
-	public GoogleMapsBody addPlacePayload()
+	public GoogleMapsBody addPlacePayload(String name, String language,String address)
 	{
 		GoogleMapsBody body = new GoogleMapsBody();
         body.setAccuracy(50);
-        body.setAddress("29, side layout, cohen 09");
-        body.setLanguage("English");
+        body.setAddress(address);
+        body.setLanguage(language);
         body.setPhone_number("123456789");
         body.setWebsite("https://rahulshettyacademy.com");
-        body.setName("Poongavanam");
+        body.setName(name);
         List<String> types = new ArrayList<String>();
         types.add("shoe park");
         types.add("vanam");
@@ -32,5 +32,8 @@ public class TestDataBuild {
         return body;
 	}
 	
-	
+	public String deletePlacePayload(String placeId)
+	{
+		return "{\r\n\"place_id\": \""+placeId+"\"\r\n}";
+	}
 }
